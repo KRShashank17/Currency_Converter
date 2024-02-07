@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  // const currencyInfo = useCurrencyInfo(from)
+  const currencyInfo = useCurrencyInfo(from)
 
   // const options = Object.keys(currencyInfo)
 
